@@ -17,6 +17,17 @@
 * + * {
   box-sizing: border-box; }
 
+html {
+  font-size: calc(1em + 1vw); }
+    @media screen and (min-width: 50em) {
+    html {
+      font-size: 2vw;
+    } }
+    @media screen and (min-width: 75em) {
+  html {
+    font-size: 1.5em;
+    } }
+
 body {
   color: #ffffff;
   font-family: 'Questrial', sans-serif;
@@ -176,10 +187,15 @@ sp-bookmark {
   margin-bottom: 5px; }
 
 .bookmark__link {
+  font-size: 2em;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+  0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
   text-overflow: ellipsis;
   white-space: nowrap;
   display: inline-block;
-  padding: 18px 9px 18px 9px;
+  padding: 5px 9px 35px 9px;
   overflow: hidden;
   transition: color 0.1s ease-in-out;
   max-width: calc(100% - 18px); }
@@ -792,7 +808,7 @@ sp-bookmark {
 .bookmarklist-container--blue-dark {
   background-color: #237979; }
   .bookmarklist-container--blue-dark a {
-    color: #50cccc; }
+    color: #fff; }
   .bookmarklist-container--blue-dark .bookmarklist__form__button, .bookmarklist-container--blue-dark .bookmark__form__button {
     color: #50cccc;
     border-color: #50cccc; }
