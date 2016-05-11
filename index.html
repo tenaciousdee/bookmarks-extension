@@ -1,0 +1,25 @@
+<html>
+  <head>
+
+    <title>Bookmarks Extension</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- We load the libraries we need directly from the "node_modules" folder.
+    In a more complex project, we would use a different approach here,
+    e.g. working with a build tool like gulp.js or Angular-CLI. -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- Load the SystemJS config -->
+    <script src="scripts/system.config.js"></script>
+
+  </head>
+
+  <body>
+    <sp-list>Loading bookmarks...</sp-list>
+  </body>
+
+</html>
